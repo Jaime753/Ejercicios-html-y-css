@@ -69,4 +69,16 @@ body{
  /*hover para que el botón cambie de color al pasar el mouse*/
  .presentacion__enlace__link:hover { 
     background-color: #272727;
+    font-size: 28px;
+    color:#22D4FD;
+    padding: 3%;
+    border: 6px solid #0000FF;
+    cursor:help;
+ 
+ }
+ .fotografia:hover {
+    width: 450px;
+    height:450px;
+    object-fit: cover;
+    border-radius: 50%;
  }
