@@ -42,16 +42,31 @@ body{
 .presentacion__enlace {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion__enlace__subtitulo{
+    font-family: "Krona One", serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 .presentacion__enlace__link {
-   width:280px;
-   background-color: #22D4FD;
+   width:378px;
    text-align: center;
    padding: 21.5px 0;
-   border-radius: 16px;
+   border-radius: 8px;
    font-family: "Montserrat", serif;
    font-size: 24px;
    font-weight: 600;
    text-decoration: none;
-   color: black;
-}
+   color:#F6F6F6;
+   border: 2px solid #22D4FD;
+   display:flex;
+   justify-content: center;
+   gap: 18px;
+ }
+ /*hover para que el botón cambie de color al pasar el mouse*/
+ .presentacion__enlace__link:hover { 
+    background-color: #272727;
+ }
