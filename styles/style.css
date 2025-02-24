@@ -10,7 +10,7 @@
     --fuente-montserrat:"Montserrat", serif;
     --fuente-krona:"Krona One", serif;
 
-    --tamaño-fuente-contenido-texto: 24px;
+    --tamaño-fuente-contenido-texto: 1.5rem;
 }
 
 * {
@@ -31,12 +31,12 @@ body{
 
 .header__menu {
    display: flex; 
-   gap: 80px;
+   gap: 5rem;
 }
 
 .header__menu__link {
     font-family:var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem; /* 1rem = 16px => 1.5rem = 24px*/
     font-weight: 600;
     color:var(--color-terciario);
     text-decoration: none;
@@ -52,17 +52,18 @@ body{
     align-items: center;
     padding: 6% 15%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido {
-    width: 615px;
+    width: 50%; /* 615px = 38.4rem*/
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .presentacion__contenido__titulo {
-    font-size: 36px;
+    font-size: 2.25rem; /* 1rem = 16px */
     font-family:var(--fuente-krona);
 }
 
@@ -80,53 +81,56 @@ body{
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .presentacion__enlace__subtitulo{
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .presentacion__enlace__link {
-   width:378px;
+   width:50%; /* 378px*/
    text-align: center;
-   padding: 21.5px 0;
-   border-radius: 8px;
+   padding: 1.35rem 0;
+   border-radius: 0.5rem;
    font-family: var(--fuente-montserrat);
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 600;
    text-decoration: none;
    color:var(--color-secundario);
    border: 2px solid var(--color-terciario);
    display:flex;
    justify-content: center;
-   gap: 18px;
+   gap: 1.125remx;
  }
  /*hover para que el botón cambie de color al pasar el mouse*/
  .presentacion__enlace__link:hover { 
     background-color: var(--color-primario);
-    font-size: 28px;
+    font-size: 1.75rem;
     color:var(--color-terciario);
     padding: 3%;
     border: 6px solid var(--color-hover);
     cursor:help; /*no responde con el "pointer"*/
  }
-
+ .fotografia{
+    width: 50%;
+ }
+/*
  .fotografia:hover {
-    width: 450px;
-    height:450px;
+    width: 28rem;
+    height:28rem;
     object-fit: cover;
     border-radius: 50%;
- }
+ } */
  
  .footer {
     font-family:var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color:var(--color-primario);
-    padding: 24px;
+    padding: 1.5rem;
     text-align: center;
     background-color: var(--color-terciario);
  }
