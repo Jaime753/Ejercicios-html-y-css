@@ -19,6 +19,7 @@
 }
 
 body{
+    box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-secundario);
    /* height: 100vh; "para ocupar el 100% de la pantalla*/
@@ -31,7 +32,7 @@ body{
 
 .header__menu {
    display: flex; 
-   gap: 5rem;
+   gap: 5rem; /* 80px*/
 }
 
 .header__menu__link {
@@ -41,29 +42,28 @@ body{
     color:var(--color-terciario);
     text-decoration: none;
  }
-
+/*
 .header__menu__link:hover {
     color: var(--color-hover);
     cursor: pointer;
  }
-
+*/
 .presentacion {
+    padding: 5% 15%;
     display: flex;
     align-items: center;
-    padding: 6% 15%;
     justify-content: space-between;
-    gap: 82px;
 }
 
 .presentacion__contenido {
     width: 50%; /* 615px = 38.4rem*/
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2.5rem; /* 40px */
 }
 
 .presentacion__contenido__titulo {
-    font-size: 2.25rem; /* 1rem = 16px */
+    font-size: 2rem; /* 1rem = 16px */
     font-family:var(--fuente-krona);
 }
 
@@ -91,19 +91,19 @@ body{
 }
 
 .presentacion__enlace__link {
-   width:50%; /* 378px*/
-   text-align: center;
-   padding: 1.35rem 0;
-   border-radius: 0.5rem;
-   font-family: var(--fuente-montserrat);
-   font-size: 1.5rem;
-   font-weight: 600;
-   text-decoration: none;
-   color:var(--color-secundario);
-   border: 2px solid var(--color-terciario);
    display:flex;
    justify-content: center;
-   gap: 1.125remx;
+   gap: 1.125rem;
+   border: 2px solid var(--color-terciario);
+   width:50%; /* 378px*/
+   text-align: center;
+   border-radius: 0.5rem;
+   font-size: 1.5rem;
+   font-weight: 600;
+   padding: 1.35rem 0;
+   text-decoration: none;
+   color:var(--color-secundario);
+   font-family: var(--fuente-montserrat);
  }
  /*hover para que el botón cambie de color al pasar el mouse*/
  .presentacion__enlace__link:hover { 
@@ -114,11 +114,11 @@ body{
     border: 6px solid var(--color-hover);
     cursor:help; /*no responde con el "pointer"*/
  }
- .fotografia{
+ .presentacion__imagen {
     width: 50%;
  }
 /*
- .fotografia:hover {
+ .presentacion__imagen:hover {
     width: 28rem;
     height:28rem;
     object-fit: cover;
@@ -126,12 +126,12 @@ body{
  } */
  
  .footer {
-    font-family:var(--fuente-montserrat);
-    font-size: 1.5rem;
-    font-weight: 400;
     color:var(--color-primario);
+    background-color: var(--color-terciario);
     padding: 1.5rem;
     text-align: center;
-    background-color: var(--color-terciario);
+    font-family:var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;  
  }
  
